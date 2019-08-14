@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background-color: black">
+    <script id="config">
+        const settings = {
+            breath: true,
+            image: {
+                // name: 'CloneColors.png',
+                // rows: 2,
+                // columns: 5, 
+                // amountOfFrames: 10,
+
+                // name: 'Colors.png',
+                // rows: 2,
+                // columns: 5, 
+                // amountOfFrames: 10,
+
+                name: 'ColorsTransform.png',
+                rows: 2,
+                columns: 5, 
+                amountOfFrames: 10,
+            },
+
+            // x     = mouse x location
+            // y     = mouse y location
+            // scale = image scale
+            // i     = image it is (smallest is 20 and bigger is smaller)
+            Movement(x, y, scale, i) {
+                // Centered
+                return {
+                    newX: 0,
+                    newY: 0
+                }
+
+                // Boring stuff
+                // return {
+                //     newX: x,
+                //     newY: y
+                // }
+
+                // Cool curvy
+                // return {
+                //     newX: x * (0.5 + (scale * 0.1) * i),
+                //     newY: y * (0.5 + (scale * 0.1) * i)
+                // }
+
+                // Invert boring
+                // return {
+                //     newX: x * -1,
+                //     newY: y * -1
+                // }
+
+                // Priamidish stuff
+                // return {
+                //     newX: x * -(-2 + (scale * 0.1) * i),
+                //     newY: y * -(-2 + (scale * 0.1) * i)
+                // }
+            },
+        }
+    </script>
+    <div id="basic">
+        <script src='./files/source/libs/eve.js'></script>
+        <script src="./load.js"></script>
+    </div>
+</body>
+</html>
